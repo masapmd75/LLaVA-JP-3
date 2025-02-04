@@ -27,7 +27,7 @@ python train_llava.py \
     --group_by_modality_length False \
     --fp16 False \
     --bf16 False \
-    --output_dir ./output/checkpoints/pretrain-llava-v1.5-llm-jp-3_pretrain_stair \
+    --output_dir ./output/checkpoints/pretrain-llava-v1.5-jp-3_pretrain_stair \
     --num_train_epochs 1 \
     --per_device_train_batch_size 1 \
     --per_device_eval_batch_size 1 \
