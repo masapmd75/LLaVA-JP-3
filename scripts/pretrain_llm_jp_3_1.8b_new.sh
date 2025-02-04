@@ -6,7 +6,7 @@
 #--data_path ./dataset/cc3m_pretrain_595k_ja.json \
 #--model_name_or_path llm-jp/llm-jp-3-1.8b-instruct \
 python train_llava.py \
-    --model_name_or_path ./llm-jp-3-1.8b-instruct \
+    --model_name_or_path llm-jp/llm-jp-3-1.8b-instruct \
     --version plain \
     --freeze_backbone False \
     --tune_mm_mlp_adapter True \
