@@ -25,13 +25,13 @@ python train_llava.py \
     --bits 16 \
     --lora_enable True \
     --group_by_modality_length False \
-    --fp16 False \
-    --bf16 False \
+    --fp16 True \
+    --bf16 True \
     --output_dir ./output/checkpoints/pretrain-llava-v1.5-jp-3_pretrain_stair \
     --num_train_epochs 1 \
-    --per_device_train_batch_size 1 \
-    --per_device_eval_batch_size 1 \
-    --gradient_accumulation_steps 1 \
+    --per_device_train_batch_size 2 \
+    --per_device_eval_batch_size 2 \
+    --gradient_accumulation_steps 4 \
     --eval_strategy "no" \
     --save_strategy "epoch" \
     --save_steps 24000 \
